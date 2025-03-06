@@ -1,0 +1,864 @@
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Ref(int) a
+ HeapAlloc(a 20)
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+ print << readHeap(a)
+II) Sym Table: 
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Ref(int) a
+II) Sym Table: 
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Ref(int) a
+II) Sym Table: 
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ HeapAlloc(a 20)
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+ print << readHeap(a)
+II) Sym Table: 
+a->Ref(0, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ HeapAlloc(a 20)
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+ print << readHeap(a)
+II) Sym Table: 
+a->Ref(0, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ HeapAlloc(a 20)
+II) Sym Table: 
+a->Ref(0, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ HeapAlloc(a 20)
+II) Sym Table: 
+a->Ref(0, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+ print << readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+ print << readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ for(v=0;v<3;v=v + 1) {Fork( print << v; v = v * readHeap(a) )}
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ int v
+ v = 0
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ int v
+ v = 0
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ int v
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ int v
+II) Sym Table: 
+a->Ref(1, int)
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = 0
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = 0
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = 0
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = 0
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ print << v
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ print << v
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ print << v
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ print << v
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 1 ~ 
+I) Exe Stack:
+II) Sym Table: 
+a->Ref(1, int)
+v->0
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ Fork( print << v; v = v * readHeap(a) )
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 2 ~ 
+I) Exe Stack:
+ print << v
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 
+
+****** Before code execution ****** 
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ v = v + 1
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 2 ~ 
+I) Exe Stack:
+ print << v
+ v = v * readHeap(a)
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 0 ~ 
+I) Exe Stack:
+ while(v < 3) {Fork( print << v; v = v * readHeap(a) ); v = v + 1}
+II) Sym Table: 
+a->Ref(1, int)
+v->2
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+----[ NEW LOG STARTING ]----
+
+ ~ Program State | ID: 2 ~ 
+I) Exe Stack:
+ print << v
+II) Sym Table: 
+a->Ref(1, int)
+v->1
+III) Out:
+0
+IV) FileTable:
+
+V) Heap:
+1->20
+
+
+------[ LOG ENDED ]------
+
+##### After the execution ###### 

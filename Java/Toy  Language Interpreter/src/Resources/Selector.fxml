@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" style="-fx-background-color: #ff9c9c;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SelectorFXController">
+   <children>
+      <ListView fx:id="programsList" prefHeight="358.0" prefWidth="600.0" style="-fx-background-color: #bbbbbb;" />
+      <Button fx:id="selectButton" graphicTextGap="5.0" layoutX="180.0" layoutY="391.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="240.0" style="-fx-background-color: #ffecb0;" text="Select Program">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="errorMessage" layoutX="27.0" layoutY="365.0" prefHeight="20.0" prefWidth="546.0" text="" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
