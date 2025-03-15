@@ -2,13 +2,9 @@
 
 A Java-based interpreter for a custom-designed concurrent toy programming language, built using advanced programming concepts and architectural patterns.
 
----
-
 ## Project Overview
 
 This interpreter was developed incrementally as part of university coursework. It supports execution of programs written in a custom-defined language, demonstrating key programming principles and complex features.
-
----
 
 ## Key Concepts & Features
 
@@ -20,8 +16,6 @@ This interpreter was developed incrementally as part of university coursework. I
 - **Type Checking**: Static type checking before program execution
 - **Robust Exception Handling**: Custom exceptions for various runtime errors
 - **Graphical User Interface (GUI)**: Interactive GUI built with JavaFX
-
----
 
 ## Technical Complexity
 
@@ -63,12 +57,6 @@ The JavaFX interface allows users to:
 - Visualize execution steps interactively.
 - Inspect heap memory, symbol tables, execution stacks, file tables, and outputs in real-time.
 
----
-
 ## Achievements
 
 This project received the maximum grade (**10/10**) due to its complexity, correctness, adherence to software design principles, and comprehensive feature set.
-
----
-
-For full details about the implementation and features, please refer to [Documentation.pdf](Documentation.pdf).
