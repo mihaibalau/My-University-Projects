@@ -8,7 +8,5 @@
 
 **NB!** We do not expect you to implement optimal play for the computer player. However, it should still employ a strategy when making its moves in order to attempt to win the game and provide an entertaining opponent for the human player. Minimally, the computer player should move to win the game whenever possible and should block the human player’s attempts at 1-move victory, whenever possible
 
-**deadline is week 14**
-
 ### Battleship
 The game is described [here](https://en.wikipedia.org/wiki/Battleship_(game))
