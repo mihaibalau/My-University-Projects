@@ -13,6 +13,7 @@ This interpreter was developed incrementally as part of university coursework. I
 - **Concurrency**: Multi-threaded execution with `fork` statements and Java's `ExecutorService`
 - **Heap Management**: Dynamic memory allocation with garbage collection
 - **File Operations**: Open, read, write, and close files using Java I/O streams
+- **Functional Programming**: Recent labs applied high-order functions for modular, side-effect-free code.
 - **Type Checking**: Static type checking before program execution
 - **Robust Exception Handling**: Custom exceptions for various runtime errors
 - **Graphical User Interface (GUI)**: Interactive GUI built with JavaFX
