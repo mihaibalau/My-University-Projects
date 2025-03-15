@@ -1,3 +1,0 @@
-/mnt/c/Users/mihib/OneDrive/Documents/ASCProjects/Lab 12/cmake-build-debug/CMakeFiles/Lab_12.dir
-/mnt/c/Users/mihib/OneDrive/Documents/ASCProjects/Lab 12/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/c/Users/mihib/OneDrive/Documents/ASCProjects/Lab 12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
