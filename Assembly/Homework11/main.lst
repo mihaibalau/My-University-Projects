@@ -1,0 +1,110 @@
+     1                                  bits 32 
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  extern exit, printf, fopen, fclose, scanf, gets       
+     6                                  import exit msvcrt.dll
+     7                                  import printf msvcrt.dll
+     8                                  import fopen msvcrt.dll
+     9                                  import fclose msvcrt.dll
+    10                                  import scanf msvcrt.dll
+    11                                  import gets msvcrt.dll
+    12                                                            
+    13                                  global string
+    14                                  global max_value
+    15                                  
+    16                                  segment data use32 class=data
+    17 00000000 <res 00000001>              elements_number resb 1
+    18 00000001 00000000                    max_value dd 0
+    19 00000005 456E74657220746865-         info_text db "Enter the string of unsigned numbers in base 10: ", 0
+    19 0000000E 20737472696E67206F-
+    19 00000017 6620756E7369676E65-
+    19 00000020 64206E756D62657273-
+    19 00000029 20696E206261736520-
+    19 00000032 31303A2000         
+    20 00000037 256400                      print_format db "%d" , 0
+    21 0000003A <res 00000064>              string times 100 resb 1
+    22                                  
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          
+    26 00000000 68[05000000]                    push dword info_text
+    27 00000005 FF15[00000000]                  call [printf]
+    28 0000000B 83C404                          add esp, 4
+    29                                          
+    30 0000000E 68[3A000000]                    push dword string
+    31 00000013 FF15[00000000]                  call [gets]
+    32 00000019 83C404                          add esp, 4
+    33                                          
+    34 0000001C 68[3A000000]                    push string
+    35 00000021 83C404                          add esp, 4
+    36                                          
+    37 00000024 BB00000000                      mov ebx, 0
+    38 00000029 BE[3A000000]                    mov esi, string
+    39                                  
+    40 0000002E B800000000                      mov eax, 0
+    41 00000033 AC                              lodsb
+    42 00000034 83E830                          sub eax, '0'
+    43 00000037 89C3                            mov ebx, eax
+    44                                          
+    45 00000039 B963000000                      mov ecx, 99
+    46                                          repeat:
+    47                                          
+    48 0000003E AC                                  lodsb
+    49                                              
+    50 0000003F 83F800                              cmp eax, 0
+    51 00000042 7436                                je out_of_loop
+    52                                              
+    53 00000044 83F820                              cmp eax, ' '
+    54 00000047 7419                                je compar_number
+    55                                              
+    56 00000049 83E830                              sub eax, '0'
+    57 0000004C BA00000000                          mov edx, 0
+    58                                              
+    59 00000051 50                                  push eax
+    60 00000052 89D8                                mov eax, ebx
+    61 00000054 BB0A000000                          mov ebx, 10
+    62 00000059 F7E3                                mul ebx
+    63 0000005B 89C3                                mov ebx, eax
+    64 0000005D 58                                  pop eax
+    65 0000005E 01C3                                add ebx, eax
+    66                                              
+    67 00000060 EB16                                jmp at_end
+    68                                              compar_number:
+    69                                            
+    70 00000062 3B1D[01000000]                          cmp ebx, [max_value]
+    71 00000068 7702                                    ja new_maximum_value
+    72                                                  
+    73 0000006A EB06                                    jmp skip_it
+    74                                                  
+    75                                                  new_maximum_value:
+    76 0000006C 891D[01000000]                              mov [max_value], ebx
+    77                                                      
+    78                                                  skip_it:
+    79 00000072 AC                                      lodsb
+    80 00000073 83E830                                  sub eax, '0'
+    81 00000076 89C3                                    mov ebx, eax
+    82                                              
+    83                                              at_end:
+    84                                          
+    85 00000078 E2C4                            loop repeat
+    86                                          
+    87                                          out_of_loop:
+    88                                          
+    89 0000007A 3B1D[01000000]                  cmp ebx, [max_value]
+    90 00000080 7702                            ja new_maximum_value2
+    91                                          
+    92 00000082 EB06                            jmp skip_it2
+    93                                          
+    94                                          new_maximum_value2:
+    95 00000084 891D[01000000]                      mov [max_value], ebx
+    96                                              
+    97                                          skip_it2:
+    98                                          
+    99 0000008A FF35[01000000]                  push dword [max_value]
+   100 00000090 68[37000000]                    push dword print_format
+   101 00000095 FF15[00000000]                  call [printf]
+   102 0000009B 83C408                          add esp, 4*2
+   103                                          
+   104 0000009E 6A00                            push    dword 0
+   105 000000A0 FF15[00000000]                  call    [exit]
