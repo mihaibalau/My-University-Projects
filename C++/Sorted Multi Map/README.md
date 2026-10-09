@@ -11,3 +11,5 @@ threshold for α and resize and rehash the table when the actual load factor is 
 
 ADT SortedMultiMap – using a hashtable with open addressing and quadratic probing in 
 which (key, value) pairs are stored. If a key has multiple values, it appears in multiple pairs.
+
+Technologies: C++. Hashtable with open addressing and quadratic probing, dynamic resize and rehash. No STL containers.

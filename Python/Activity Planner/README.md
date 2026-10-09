@@ -22,3 +22,5 @@ Create an application to:
     - Activities for a given date. List the activities for a given date, in the order of their start time.
     - Busiest days. This will provide the list of upcoming dates with activities, sorted in ascending order of the free time in that day (all intervals with no activities).
     - Activities with a given person. List all upcoming activities to which a given person will participate.
+
+Technologies: Python, PyUnit. Layered architecture (domain, repository, services, validators, UI).

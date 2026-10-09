@@ -10,3 +10,5 @@
 
 ### Battleship
 The game is described [here](https://en.wikipedia.org/wiki/Battleship_(game))
+
+Technologies: Python, PyUnit. Console game, human against a computer player.

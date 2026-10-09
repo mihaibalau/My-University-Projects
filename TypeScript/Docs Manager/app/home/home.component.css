@@ -1,0 +1,70 @@
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+select {
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.doc-card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.doc-card h3 {
+  margin-top: 0;
+  color: #007acc;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.actions button {
+  margin-right: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background-color: #e0e0e0;
+}
+
+.actions .delete {
+  background-color: #fdd;
+  color: #900;
+}
+
+.no-docs-message {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #888;
+}

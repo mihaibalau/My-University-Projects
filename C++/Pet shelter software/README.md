@@ -61,3 +61,5 @@ For your solution to the previous assignment (Assignment 05-06), add the followi
 Displaying the list means opening the saved file (`CSV` or `HTML`) with the correct application (`CSV` files using Notepad, Notepad++, Microsoft Excel etc. and `HTML` files using a browser)
 
 6. Create a UML class diagram for your entire application.
+
+Technologies: C++, STL (`vector`, algorithms), file streams, exceptions, CSV, HTML.

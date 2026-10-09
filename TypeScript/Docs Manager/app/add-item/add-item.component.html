@@ -1,0 +1,68 @@
+<div class="add-doc-container">
+  <h2>Add a New Document</h2>
+  <form (submit)="onSubmit($event)">
+    <label>
+      Author:
+      <input
+        type="text"
+        name="author"
+        [value]="document.author"
+        (input)="document.author = $any($event.target).value"
+        required
+        minlength="2"
+      />
+    </label>
+    <br /><br />
+
+    <label>
+      Title:
+      <input
+        type="text"
+        name="title"
+        [value]="document.title"
+        (input)="document.title = $any($event.target).value"
+        required
+        minlength="2"
+      />
+    </label>
+    <br /><br />
+
+    <label>
+      Number of Pages:
+      <input
+        type="number"
+        name="noPages"
+        [value]="document.noPages"
+        (input)="document.noPages = +$any($event.target).value"
+        required
+        min="1"
+      />
+    </label>
+    <br /><br />
+
+    <label>
+      Type:
+      <select
+        name="type"
+        [value]="document.type"
+        (change)="document.type = $any($event.target).value"
+        required
+      >
+        <option value="">Select</option>
+        <option value="Carte">Carte</option>
+        <option value="Roman">Roman</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Poezie">Poezie</option>
+      </select>
+    </label>
+    <br /><br />
+
+    <button type="submit">Add Document</button>
+  </form>
+
+  @if (responseMessage) {
+    <div style="margin-top: 20px;">
+      {{ responseMessage }}
+    </div>
+  }
+</div>

@@ -1,0 +1,26 @@
+<div class="home-container">
+  <h2>Document Library</h2>
+
+  <label for="typeSelect">Filter by Type:</label>
+  <select [formControl]="typeControl" id="typeSelect">
+    <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+  </select>
+
+  <div class="doc-list">
+    <div class="doc-card" *ngFor="let doc of documents()">
+      <h3>{{ doc.title }}</h3>
+      <p><strong>Author:</strong> {{ doc.author }}</p>
+      <p><strong>Pages:</strong> {{ doc.noPages }}</p>
+      <p><strong>Type:</strong> {{ doc.type }}</p>
+
+      <div class="actions">
+        <button (click)="editDocument(doc.id)">Edit</button>
+        <button (click)="deleteDocument(doc.id)" class="delete">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="no-docs-message" *ngIf="documents().length === 0">
+    No documents found.
+  </div>
+</div>

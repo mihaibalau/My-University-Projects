@@ -12,5 +12,15 @@ Throughout this project, I demonstrate my database knowledge, including:
 
 Through this project, I aim to demonstrate my knowledge in database management and SQL, showcasing skills that can be readily adapted and enhanced for more complex, large-scale projects as needed.
 
+The later labs stay on the same database:
+
+* `validations-and-insert.sql` adds check functions for a competition, a biker and a participant, a `LogTable`, and a procedure that inserts a biker together with a competition
+* `insert-scenario-2.sql` is the second version of that insert procedure
+* `concurrency-session-1.sql` and `concurrency-session-2.sql` are the two sessions for dirty reads, non-repeatable reads, phantom reads and deadlocks, including the isolation-level fixes
+
+The Windows Forms client that reads this database is in `C#/Mountain bike client`.
+
+Technologies: SQL Server, T-SQL (functions, stored procedures, transactions, isolation levels).
+
 
 

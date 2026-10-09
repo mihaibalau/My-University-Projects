@@ -61,3 +61,5 @@ The JavaFX interface allows users to:
 ## Achievements
 
 This project received the maximum grade (**10/10**) due to its complexity, correctness, adherence to software design principles, and comprehensive feature set.
+
+Technologies: Java, JavaFX, `ExecutorService` (threads for `fork`), Java I/O, generics.

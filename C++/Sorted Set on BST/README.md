@@ -6,4 +6,6 @@ from any other library.
 Do not implement a separate class for the binary search tree (or for the dynamic array), 
 implement the container directly!
 
-ADT SortedSet – using a BST with linked representation on an array. 
+ADT SortedSet – using a BST with linked representation on an array.
+
+Technologies: C++. Binary search tree stored as links inside an array. No STL containers. 

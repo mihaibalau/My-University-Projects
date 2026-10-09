@@ -9,3 +9,5 @@ A new version has been uploaded as a personal project in a separate repository. 
 ## Documentation
 
 For detailed information about this project, please refer to the [Documentation.pdf](Documentation.pdf) file.
+
+Technologies: C, GTK.
